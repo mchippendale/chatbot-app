@@ -1,0 +1,35 @@
+
+.infocard-outer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.info-card-outer-container {
+    display: inline;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.info-title {
+    padding: 15px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #1E4A74;
+}
+
+.info-card-container {
+    border: 1px solid rgb(126, 126, 126);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    filter: drop-shadow(0 24px 20px rgba(0,0,0,.15));
+    box-shadow: 0 24px 20px rgba(0,0,0,.15);
+    margin-bottom: 40px;
+}
+
+.info-text {
+    padding: 0px 15px 15px 15px;
+    font-size:15px;
+    line-height: 200%; 
+    margin: none;
+}

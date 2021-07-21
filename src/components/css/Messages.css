@@ -1,0 +1,86 @@
+
+.greta-message{
+    background-color: rgb(59, 167, 238);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 75%;
+    margin-left: 10px;
+    line-height: 150%;
+}
+
+.user-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.user-message{
+    background-color: rgb(27, 223, 122);
+    padding: 8px 10px 5px 0px;
+    border-radius: 20px;
+    width: 75%;
+    min-height: 36px;
+    margin: 0px 10px 0px 10px;
+} 
+
+.greta-message-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    width: 70%;
+    margin-left: 10px;
+}
+
+.greta-message-item {
+    background-color: rgb(30, 213, 254);
+    font-size: 16px;
+    border-radius: 20px;
+    width: max-content;
+    padding: 10px 10px 10px 10px;
+    margin-top: 0px;
+}
+
+
+@media only screen and (max-width: 375px){
+    .greta-message{
+        background-color: rgb(59, 167, 238);
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+        width: 75%;
+        margin-left: 10px;
+        line-height: 150%;
+    }
+    
+    .user-message-container {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .user-message{
+        background-color: rgb(27, 223, 122);
+        padding: 8px 10px 5px 0px;
+        border-radius: 20px;
+        width: 80%;
+        min-height: 36px;
+        margin: 0px 10px 0px 10px;
+    } 
+    
+    .greta-message-item-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        width: 80%;
+        margin-left: 10px;
+        gap: 5px;
+    }
+    
+    .greta-message-item {
+        background-color: rgb(30, 213, 254);
+        font-size: 16px;
+        border-radius: 20px;
+        width: max-content;
+        padding: 10px 10px 10px 10px;
+        margin-top: 0px;
+    }
+}

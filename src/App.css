@@ -1,38 +1,76 @@
+* {
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  overflow: auto;
+  height: 100vh
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content-section {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-chatbot-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(1, 151, 101);
+  height: 100vh;
+  min-width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media only screen and (max-width: 414px) {
+  /* .layout {
+      width: 100vw;
+  } */
+
+  .main-info-container  {
+    display: none;
+  }
+
+  .section-chatbot-container {
+    width: 414px;
+    height: 736px;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (max-width: 375px) {
+  /* .layout {
+      width: 100vw;
+  } */
+
+  .main-content {
+    display: block;
+    grid-template-rows: 1fr 2fr;
+    overflow: none;
+    height: max-content;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  
+
+  .main-info-container  {
+    display: none;
   }
+
+  .section-chatbot-container {
+    width: 375px;
+    height: 812px;
+  }
+
+  .footer-outer-container {
+    display: none;
+  }
+
 }
+

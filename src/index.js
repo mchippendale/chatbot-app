@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ChatbotProvider } from './ChatbotContext.js'
+import { BrowserRouter as Router} from 'react-router-dom';
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router >
+      <ChatbotProvider>
+        <App />
+      </ChatbotProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

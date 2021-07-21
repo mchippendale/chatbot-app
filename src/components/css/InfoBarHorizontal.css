@@ -1,0 +1,35 @@
+.website-information-bar-horizontal {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    background-color: #1E4A74;
+    width: 100%;
+  }
+  
+  .greener-footprint-logo {
+    display: flex;
+    padding-top: 20px;
+  }
+  
+  .greener-footprint{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 414px) {
+  
+    .website-information-bar-horizontal{
+      display: none;
+    }
+  
+  }
+
+  @media only screen and (max-width: 375px){
+    
+    .website-information-bar-horizontal{
+      display: none;
+    }
+  
+  }
