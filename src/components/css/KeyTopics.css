@@ -65,15 +65,13 @@
 
 @media only screen and (max-width: 375px){
 
-    .main-content {
-        width: 375px;
-    }
+   
 
     .header-container {
         margin-top: 20px;
         margin-bottom: 1px;
-        height: 150px;
-        width: 360px;
+        height: 300px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -92,13 +90,13 @@
     .page-heading-title {
         text-align: center;
         max-width: 360px;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 150%;
         padding-bottom: 2px;
         margin-top: 20px;
         margin-bottom: 5px;
-        color: rgb(32, 32, 32);
-        border-bottom: 2px solid rgb(53, 53, 53)
+        color: #1E4A74;
+        border-bottom: 2px solid #1E4A74;
     }
 
     .page-heading-text {
@@ -114,22 +112,23 @@
     }
 
     .subheading-outer-container {
-        max-width: 80px;
+        max-width: 340px;
         margin-top: 3px;
         margin: 0 auto;
         padding: 0px 2px;
     }
 
     .subheading-inner-container{
-        max-width: 77px;
+        max-width: 340px;
         margin: 0 auto;
         display: block;
     }
 
     .subheading  {
+        text-align: center;
         margin-top: 4px;
-        max-width: 55px;
-        font-size: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
         font-weight: bold;
         padding-bottom: 2px;
         color: #1E4A74;

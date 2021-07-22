@@ -28,21 +28,21 @@ export function ChatbotProvider(props){
     const [userMessages, setUserMessage] = useState([
         {
             id: 1,
-            message: "Hi my name is Greta.",
+            message: "Hi my name is Greta 😊",
             type: "computer"
         },
         {
             id: 2,
-            message: "I can help you navigate the website.",
+            message: "I'm here to help you learn how to reduce your CO2 footprint 👣",
             type: "computer"
         },
         {
             id: 3,
-            message: "Try these topics",
+            message: "Try asking about one of these topics:",
             type: "computer",
             route: "/",
             options: true,
-            listItems: ['About us', 'Shopping', 'Travel', 'Plastics', 'Recycling', 'Energy','Food waste',]
+            listItems: ['About us', 'Shopping', 'Travel', 'Plastics', 'Recycling', 'Energy','Food waste', 'Sound']
         }
     ])
 

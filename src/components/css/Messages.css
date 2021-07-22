@@ -3,8 +3,10 @@
     background-color: rgb(59, 167, 238);
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
-    width: 75%;
+    width: 80%;
     margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 16px;
     line-height: 150%;
 }
 
@@ -14,21 +16,51 @@
     justify-content: flex-end;
     text-align: right;
 }
+.user-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgb(27, 223, 122);
+    background-color: rgb(27, 223, 122);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 .user-message{
+    text-align: right;
     background-color: rgb(27, 223, 122);
     padding: 8px 10px 5px 0px;
     border-radius: 20px;
-    width: 75%;
+    width: 80%;
     min-height: 36px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 50px;
 } 
+
+.greta-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgb(59, 167, 238);
+    background-color: rgb(59, 167, 238);
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+}
 
 .greta-message-item-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    width: 70%;
-    margin-left: 10px;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .greta-message-item {
@@ -40,10 +72,61 @@
     margin-top: 0px;
 }
 
+.user-message-wrapper {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 5fr 1fr;
+    margin-bottom: 20px;
+}
+.greta-message-wrapper {
+    display: grid;
+    place-items: start;
+    grid-template-columns: 1fr 5fr;
+}
+
 
 @media only screen and (max-width: 375px){
-    .greta-message{
+
+    .user-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(27, 223, 122);
+        background-color: rgb(27, 223, 122);
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .user-message-wrapper {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+    }
+    .greta-message-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .greta-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: 2px solid rgb(59, 167, 238);
         background-color: rgb(59, 167, 238);
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .greta-message{
+        border: 2px solid white;
+        background-color: white;
         padding: 10px 10px 10px 10px;
         border-radius: 20px;
         width: 75%;
@@ -59,24 +142,28 @@
     }
     
     .user-message{
-        background-color: rgb(27, 223, 122);
+        border: 2px solid white;
+        background-color: white;
         padding: 8px 10px 5px 0px;
         border-radius: 20px;
-        width: 80%;
+        width: 60%;
         min-height: 36px;
-        margin: 0px 10px 0px 10px;
+        margin: 10px 10px 0px 120px;
+        padding: 10px 10px 10px 10px;
+
     } 
     
     .greta-message-item-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
         width: 80%;
-        margin-left: 10px;
+        margin-left: 30px;
         gap: 5px;
     }
     
     .greta-message-item {
-        background-color: rgb(30, 213, 254);
+        border: 2px solid rgb(59, 167, 238);
+        background-color: white;
         font-size: 16px;
         border-radius: 20px;
         width: max-content;

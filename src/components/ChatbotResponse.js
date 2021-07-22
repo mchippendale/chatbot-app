@@ -1,12 +1,10 @@
-
+import About from './About'
 
 export default function ChatbotResponse(message, id) {
 
     const pathname = window.location.pathname
     
     const lowercase = message.toLowerCase()
-
-    // if (pathname === '/about') 
    
     if (lowercase === "") {
         return {
@@ -15,6 +13,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/about",
             options: false,
+            component: "Home"
         }
     } else if (lowercase.includes("sound")) {
         if (lowercase.includes("sound on")){
@@ -31,7 +30,7 @@ export default function ChatbotResponse(message, id) {
                 message: "Sound is turned off, type 'sound on' to play.",
                 type: "computer",
                 route: pathname,
-                options: false
+                options: false,
             }
         } else {
             return {
@@ -50,7 +49,8 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/",
             options: true,
-            listItems: ['About us', 'Shopping', 'Travel', 'Plastics', 'Recycling', 'Energy','Food waste',]
+            listItems: ['About us', 'Shopping', 'Travel', 'Plastics', 'Recycling', 'Energy','Food waste', 'Sound'],
+            component: "About"
         }
     }  else if (lowercase.includes("food")) {
         return {
@@ -60,7 +60,8 @@ export default function ChatbotResponse(message, id) {
             `,
             type: "computer",
             route:"/foodwaste",
-            options: false
+            options: false,
+            component: "Food"
         }
     }  else if (lowercase.includes("energy")) {
         return {
@@ -70,10 +71,11 @@ export default function ChatbotResponse(message, id) {
             `,
             type: "computer",
             route: "/energy",
-            options: false
+            options: false,
+            component: "Energy"
         }
         
-    }   else if (lowercase.includes("recycling")) {
+    }   else if (lowercase.includes("recycling") || lowercase.includes("recycle")) {
         return {
             id: id + 2,
             message: `Reduce, reuse, recycle.`,
@@ -81,13 +83,14 @@ export default function ChatbotResponse(message, id) {
             route: "/recycle",
             options: false
         }
-    } else if (lowercase.includes("shopping")) {
+    } else if (lowercase.includes("shopping") || lowercase.includes("shop")) {
         return {
             id: id + 2,
             message: `Buy biodegradable products.`,
             type: "computer",
             route: "/shopping",
-            options: false
+            options: false,
+            component: "Shopping"
         }
     } else if (lowercase.includes("plastics") || lowercase.includes("plastic")) {
         return {
@@ -95,7 +98,8 @@ export default function ChatbotResponse(message, id) {
             message: `Buy biodegradable products.`,
             type: "computer",
             route: "/plastics",
-            options: false
+            options: false,
+            component: "Plastic"
         }
     } else if (lowercase.includes("travel")) {
         return {
@@ -103,7 +107,8 @@ export default function ChatbotResponse(message, id) {
             message: `Buy biodegradable products.`,
             type: "computer",
             route: "/travel",
-            options: false
+            options: false,
+            component: "Travel"
         }
     }  else if (lowercase.includes("about")) {
         return {
@@ -112,14 +117,25 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/about",
             options: false,
+            component: "About"
         } 
+    } else if (lowercase.includes('home')) {
+        return {
+            id: id + 2,
+            message: `Ok let's go home.`,
+            type: "computer",
+            route: "/",
+            options: false,
+            component: "Home"
+        }
     } else if (lowercase) {
         return {
             id: id + 2,
             message: `Sorry I didn't understand what you typed, I'll take you back to the about page.`,
             type: "computer",
             route: "/about",
-            options: false
+            options: false,
+            component: "About"
         }
     }
 

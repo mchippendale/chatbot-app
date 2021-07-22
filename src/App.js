@@ -52,7 +52,6 @@ function App() {
           </Route>
        </Switch>
        <footer className="footer-outer-container">
-         footer
          <div>
             <PlaySound />
          </div>

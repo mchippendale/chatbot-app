@@ -1,3 +1,5 @@
+import Rainforest from './Images/rainforestbg.jpg'
+import './css/Home.css'
 
 export default function Home() {
 
@@ -8,16 +10,11 @@ export default function Home() {
                     <div className="page-heading-inner-container">
                         <h1 className="page-heading-title">Home</h1>
                         <p className="page-heading-text">Eager to play your part and start living a sustainable lifestyle? Keen to explore what changes you can make in your everyday life to help create a cleaner and more sustainable future? See how you can reduce your ecological footprint by adopting new habits that are softer on the environment.</p>
+                        <img className="rainforest-img" src={Rainforest} />
                     </div>
                 </div>
-                <div>
-                    <div className="square"></div>
-                    <div className="square"></div>
-                    <div className="square"></div>
-                    <div className="square"></div>
-                    <div className="square"></div>
-                    <div className="square"></div>
-                </div>
+                
+                
             </section>
         </div>
     )

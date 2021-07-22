@@ -4,11 +4,11 @@ import TopicCard from './TopicCard'
 export default function About() {
     return (
         <section className="main-content">
-            <section className="header-container">
+            <section className="header-container header-container-mobile">
                 <div className="page-heading-outer-container">
                     <div className="page-heading-inner-container">
                         <h1 className="page-heading-title">About </h1>
-                        <p className="page-heading-text">The most significant things we can think about, when we think about Apollo, is that it has opened for us, for us being the World, a challenge of the future. The door is now cracked, but the promise of that future lies in the young people, not just in America, but the young people all over the world. Learning to live and learning to work together.</p>
+                        <p className="page-heading-text">Australians consume a lot more per person than in many other countries. The food, energy and water we use, the timber and plastics that we depend upon – everything we do uses natural resources and produces waste. The measure of this impact on the environment is called our ecological footprint.</p>
                     </div>
                 </div>
             </section>

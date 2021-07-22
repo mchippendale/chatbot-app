@@ -53,6 +53,7 @@ export default function Chatbot() {
         <div className="chatbot-container">
             <div className="chatbot-header">
                 <div className="chatbot-header-title">Greta</div>
+                <div className="chatbot-header-title-mobile">Greener Footprint</div>
             </div>
 
             <div className="chatbot-message-display" ref={messagesEl}>
@@ -72,7 +73,7 @@ export default function Chatbot() {
                 />
                 <button 
                 onClick={() => addUserMessage(message)}
-                className="message-send-btn">send
+                className="message-send-btn">👣
                 </button>
             </div>
         </div>

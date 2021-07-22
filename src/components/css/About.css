@@ -49,10 +49,10 @@
         margin: 0 auto;
     }
 
-    .header-container {
+    .header-container-mobile {
         margin-top: 1px;
         margin-bottom: 2px;
-        height: 0px;
+        height: 300px;
     }
     
     .page-heading-outer-container {
@@ -65,14 +65,14 @@
     }
     
     .page-heading-inner-container {
-        max-width: 250px;
+        max-width: 200px;
         margin: 0 auto;
         display: block;
     }
     
     .page-heading-title {
         max-width: 200px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 100%;
         padding-bottom: 2px;
         margin-top: 3px;
@@ -87,8 +87,9 @@
     }
     
     .keytopics-section-container {
-        width: 360px;
-        margin-top: 20px;
+        width: 340px;
+        height: 100%;
+        margin-top: 200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;

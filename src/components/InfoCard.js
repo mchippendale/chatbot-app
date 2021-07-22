@@ -3,7 +3,7 @@ import './css/InfoCard.css'
 
 export default function InfoCard(props) {
     return ( <section className="infocard-outer-container">
-        <div className=".info-card-outer-container">
+        <div className=".infocard-inner-container">
             <div className="info-card-container">
                 <div className="info-title">
                     <div>{props.subtopic}</div>

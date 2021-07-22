@@ -9,4 +9,5 @@ export default function InfoBarHorizontal() {
             </div>
         </section>
     )
+    
 }
