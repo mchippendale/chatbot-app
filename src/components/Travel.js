@@ -1,4 +1,4 @@
-
+import PlaySound from './PlaySound'
 
 import InfoCard from './InfoCard'
 
@@ -29,6 +29,11 @@ export default function Travel() {
                         <InfoCard subtopic="Travel light"/>
                     </div>
                 </section>
+                <footer className="footer-outer-container">
+                    <div>
+                        <PlaySound />
+                    </div>
+                </footer>
             </section>
         </section>
 

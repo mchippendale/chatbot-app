@@ -5,6 +5,11 @@
     padding: 0px 20px;
 }
 
+.infocard-outer-container:hover {
+    transform: translateY(-10px);
+}
+
+
 .infocard-inner-container {
     display: inline;
     margin: 10px;

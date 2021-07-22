@@ -9,7 +9,8 @@ export default function InfoCard(props) {
                     <div>{props.subtopic}</div>
                 </div>
                 <div className="info-text">
-                    Over 90% per cent of popular wild seafood, like tuna and cod, are either fully fished or overfished. But if you choose carefully, you can still enjoy your favourite seafood while ensuring there are enough fish in our oceans for the future.
+                {`95% of Australia’s sugar is grown along the Great Barrier Reef’s coast. Sadly, the impacts of some cane farms are anything but sweet. Polluted run-off from sugarcane farms can weaken reefs and encourage coral-eating crown-of-thorns starfish.
+                By looking for the Bonsucro logo when doing your next food shop, you can help ensure the sugar you buy is more responsibly grown and keep our Great Barrier Reef healthy.`}
                 </div>
             </div>
         </div>

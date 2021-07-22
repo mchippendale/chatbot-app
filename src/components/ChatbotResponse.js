@@ -1,4 +1,11 @@
+import FoodWaste from './FoodWaste'
 import About from './About'
+import Home from './Home'
+import Energy from './Energy';
+import Plastics from './Plastics';
+import Shopping from './Shopping';
+import ReduceReuseRecycle from './ReduceReuseRecycle';
+import Travel from './Travel';
 
 export default function ChatbotResponse(message, id) {
 
@@ -13,7 +20,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/about",
             options: false,
-            component: "Home"
+            component: Home
         }
     } else if (lowercase.includes("sound")) {
         if (lowercase.includes("sound on")){
@@ -50,7 +57,7 @@ export default function ChatbotResponse(message, id) {
             route: "/",
             options: true,
             listItems: ['About us', 'Shopping', 'Travel', 'Plastics', 'Recycling', 'Energy','Food waste', 'Sound'],
-            component: "About"
+            component: About
         }
     }  else if (lowercase.includes("food")) {
         return {
@@ -61,7 +68,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route:"/foodwaste",
             options: false,
-            component: "Food"
+            component: FoodWaste
         }
     }  else if (lowercase.includes("energy")) {
         return {
@@ -72,7 +79,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/energy",
             options: false,
-            component: "Energy"
+            component: Energy
         }
         
     }   else if (lowercase.includes("recycling") || lowercase.includes("recycle")) {
@@ -81,7 +88,8 @@ export default function ChatbotResponse(message, id) {
             message: `Reduce, reuse, recycle.`,
             type: "computer",
             route: "/recycle",
-            options: false
+            options: false,
+            component: ReduceReuseRecycle
         }
     } else if (lowercase.includes("shopping") || lowercase.includes("shop")) {
         return {
@@ -90,7 +98,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/shopping",
             options: false,
-            component: "Shopping"
+            component: Shopping
         }
     } else if (lowercase.includes("plastics") || lowercase.includes("plastic")) {
         return {
@@ -99,7 +107,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/plastics",
             options: false,
-            component: "Plastic"
+            component: Plastics
         }
     } else if (lowercase.includes("travel")) {
         return {
@@ -108,7 +116,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/travel",
             options: false,
-            component: "Travel"
+            component: Travel
         }
     }  else if (lowercase.includes("about")) {
         return {
@@ -117,7 +125,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/about",
             options: false,
-            component: "About"
+            component: About
         } 
     } else if (lowercase.includes('home')) {
         return {
@@ -126,7 +134,7 @@ export default function ChatbotResponse(message, id) {
             type: "computer",
             route: "/",
             options: false,
-            component: "Home"
+            component: Home
         }
     } else if (lowercase) {
         return {

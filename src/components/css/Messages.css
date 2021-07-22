@@ -84,9 +84,12 @@
     grid-template-columns: 1fr 5fr;
 }
 
+.mobile-size-component {
+    display: none;
+}
 
 @media only screen and (max-width: 375px){
-
+    
     .user-avatar {
         display: flex;
         justify-content: center;
@@ -132,6 +135,8 @@
         width: 75%;
         margin-left: 10px;
         line-height: 150%;
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, .55);
+        transition: 0.4s;
     }
     
     .user-message-container {
@@ -150,7 +155,7 @@
         min-height: 36px;
         margin: 10px 10px 0px 120px;
         padding: 10px 10px 10px 10px;
-
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, .55);
     } 
     
     .greta-message-item-container {
@@ -169,5 +174,10 @@
         width: max-content;
         padding: 10px 10px 10px 10px;
         margin-top: 0px;
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, .55);
+    }
+
+    .mobile-size-component {
+        display: block;
     }
 }

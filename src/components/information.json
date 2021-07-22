@@ -1,8 +1,26 @@
-{
-    "travel": "Travel",
-    "description": "Transport – whether by car, bus, motorbike or plane – accounts for about 16% of Australia’s annual greenhouse emissions and about 34% of total household greenhouse gas emissions. Our growing car use and air travel, in particular, is contributing to global warming.",
-    "subtopic": "How to reduce your food footprint",
-    ""
 
 
+{ 
+    "food-waste" : {
+        "beef": {
+            "title": "Red meat intake:",
+            "details": "Did you know that beef has the largest environmental footprint of all popular meats? The greenhouse gas emissions from ‘cow burps’ and land clearing have a significant impact on our planet.By simply reducing the amount of red meat you eat to no more than three palm sized portions a week you can help combat climate change, water pollution and deforestation."
+        },
+        "sugar": {
+            "title": "Sugar:",
+            "details": "95% of Australia’s sugar is grown along the Great Barrier Reef’s coast. Sadly, the impacts of some cane farms are anything but sweet. Polluted run-off from sugarcane farms can weaken reefs and encourage coral-eating crown-of-thorns starfish. By looking for the Bonsucro logo when doing your next food shop, you can help ensure the sugar you buy is more responsibly grown and keep our Great Barrier Reef healthy."
+        }, 
+        "seafood": {
+            "title": "Seafood:",
+            "details": "Over 90% per cent of popular wild seafood, like tuna and cod, are either fully fished or overfished. But if you choose carefully, you can still enjoy your favourite seafood while ensuring there are enough fish in our oceans for the future.On your next food shop look for seafood products that have the blue Marine Stewardship Council label or the green Aquaculture Stewardship Council label to ensure they are sustainable sourced."
+        }, 
+        "palm-oil": {
+            "title": "Palm Oil:",
+            "details": "Over 90% per cent of popular wild seafood, like tuna and cod, are either fully fished or overfished. But if you choose carefully, you can still enjoy your favourite seafood while ensuring there are enough fish in our oceans for the future.On your next food shop look for seafood products that have the blue Marine Stewardship Council label or the green Aquaculture Stewardship Council label to ensure they are sustainable sourced."
+        },
+        "shop": {
+            "title": "Shop fresh and shop local:",
+            "details": "Cut down on processed food. Heavily processed food can be more resource-intensive to produce. Get more for your money and cook from scratch with fresh seasonal ingredients. Buy food that's grown locally and in season. Enjoy your local markets, the food is often tastier and cheaper."
+        }
+    }
 }
