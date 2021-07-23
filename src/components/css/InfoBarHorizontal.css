@@ -1,7 +1,7 @@
 .website-information-bar-horizontal {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 0px;
     align-items: center;
     background-color: #05604a;
     width: 100%;
@@ -14,7 +14,7 @@
   
   .greener-footprint{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
   }
   

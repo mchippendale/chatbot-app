@@ -22,5 +22,15 @@
             "title": "Shop fresh and shop local:",
             "details": "Cut down on processed food. Heavily processed food can be more resource-intensive to produce. Get more for your money and cook from scratch with fresh seasonal ingredients. Buy food that's grown locally and in season. Enjoy your local markets, the food is often tastier and cheaper."
         }
+    },
+    "shop" : {
+        "beef": {
+            "title": "Red meat intake:",
+            "details": "Did you know that beef has the largest environmental footprint of all popular meats? The greenhouse gas emissions from ‘cow burps’ and land clearing have a significant impact on our planet.By simply reducing the amount of red meat you eat to no more than three palm sized portions a week you can help combat climate change, water pollution and deforestation."
+        },
+        "sugar": {
+            "title": "Sugar:",
+            "details": "95% of Australia’s sugar is grown along the Great Barrier Reef’s coast. Sadly, the impacts of some cane farms are anything but sweet. Polluted run-off from sugarcane farms can weaken reefs and encourage coral-eating crown-of-thorns starfish. By looking for the Bonsucro logo when doing your next food shop, you can help ensure the sugar you buy is more responsibly grown and keep our Great Barrier Reef healthy."
+        }
     }
 }

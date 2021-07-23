@@ -3,10 +3,11 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 0px 20px;
+    transition: all .2s ease-in-out;    
 }
 
 .infocard-outer-container:hover {
-    transform: translateY(-10px);
+    transform: scale(1.1); 
 }
 
 

@@ -1,10 +1,8 @@
-import PlaySound from './PlaySound'
-
 import InfoCard from './InfoCard'
-
 import './css/KeyTopics.css'
 
 export default function Travel() {
+
     return (
         <section className="main-content">
             <section className="header-container">
@@ -29,11 +27,6 @@ export default function Travel() {
                         <InfoCard subtopic="Travel light"/>
                     </div>
                 </section>
-                <footer className="footer-outer-container">
-                    <div>
-                        <PlaySound />
-                    </div>
-                </footer>
             </section>
         </section>
 

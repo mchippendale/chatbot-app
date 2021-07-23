@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect, useRef} from 'react'
 import { ChatbotContext } from '../ChatbotContext'
 import Messages from './Messages'
+import PlaySound from './PlaySound'
 
 
 export default function Chatbot() {
@@ -76,6 +77,7 @@ export default function Chatbot() {
                 className="message-send-btn">👣
                 </button>
             </div>
+    
         </div>
 
     // </section>

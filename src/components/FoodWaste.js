@@ -1,4 +1,3 @@
-
 import InfoCard from './InfoCard'
 
 import './css/KeyTopics.css'

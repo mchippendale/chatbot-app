@@ -10,8 +10,8 @@ import ReduceReuseRecycle from './components/ReduceReuseRecycle';
 import Travel from './components/Travel';
 // import InfoBar from './components/InfoBar';
 import InfoBarHorizontal from './components/InfoBarHorizontal';
-
 import PlaySound from './components/PlaySound'
+
 
 import './App.css';
 import './components/css/Chatbot.css'
@@ -23,6 +23,10 @@ function App() {
         {/* <InfoBar /> */}
         <InfoBarHorizontal />
         <Chatbot />
+        <footer className="footer-outer-container">
+            <div><PlaySound /></div>
+            <p>Built using React JS. &copy;	M.Chippendale. </p>
+        </footer>
       </section>
       <section className="main-info-container">
         <Switch >
@@ -51,13 +55,7 @@ function App() {
             <Home className="main-content-section"/>
           </Route>
        </Switch>
-       <footer className="footer-outer-container">
-         <div>
-            <PlaySound />
-         </div>
-       </footer>
        </section>
-       
     </div>
   );
 }
