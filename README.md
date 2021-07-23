@@ -7,7 +7,7 @@
 Greener Footprint is a static web-based application built using React JS. The webiste utilises a built in chatbot component to assist a user to navigate around the website. A user can communicate with the chatbot (Greta) to learn a bout how they can decrease their carbon footprint. Information has been sourced from [WWF - Change the way you live](https://www.wwf.org.au/get-involved/change-the-way-you-live#gs.731cqt)
 
 ## Planning:
-![Whimsical wireframe 1](https://github.com/mchippendale/chatbot-app/blob/main/public/wireframe1.png)
+![Whimsical wireframe 1](https://github.com/mchippendale/chatbot-app/blob/main/wireframe1.png)
 
 ## User Stories with Associated Technical Tasks
 
