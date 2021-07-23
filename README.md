@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Greener Footprint - a website with a built in rule-based chatbot component. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Greener Footprint](greenerfootprint.surge.sh)
 
-## Available Scripts
+## Summary
 
-In the project directory, you can run:
+Greener Footprint is a static web-based application built using React JS. The webiste utilises a built in chatbot component to assist a user to navigate around the website. A user can communicate with the chatbot (Greta) to learn a bout how they can decrease their carbon footprint. Information has been sourced from [WWF - Change the way you live](https://www.wwf.org.au/get-involved/change-the-way-you-live#gs.731cqt)
 
-### `npm start`
+## Planning:
+![Whimsical wireframe 1](https://github.com/mchippendale/chatbot-app/blob/main/wireframe1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## User Stories with Associated Technical Tasks
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Key Stories
 
-### `npm test`
+* All navigation around the website is controlled by the chatbot. 
+* Users can ask Greta the rule-based Chatbot to navigate to a page. 
+* Chatbot can reply to users basic questions about regarding the outlined topics. 
+  * 8 key pages: Foodwaste, Travel, Shopping, Plastics, Recycling and Energy. 
+* Users can turn background sound on and off through the chabot. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Future Stories 
 
-### `npm run build`
+* User can ask the chatbot more questions. 
+* Natural Language Processing via communication with an API e.g IBM Watson API or Google Cloud NLP API. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Landing Page Layout 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Page is separated in two main sections. 
+* Chatbot is on the left handside of the page to capture the users attention. 
+* Main information is in the right-hand section. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Functionality 
+The app is built in React JS and CSS. The chatbot has been built to follow a stepo of basic rules when receiving user input.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Key react components: 
+* React Router DOM component was used to switch between pages - Route and Switch were the key components. 
+* UseContext component was utilised to manage global state. 
+* UseState component was utilised to manage state local to a component.  
+* PlaySound thrid party react component was utilised to enable sound in the application. 
+* React hooks were utilised with in the application - Usehistory hook to route to a new page. UseEffect hook to enable the chatbot view to scroll to bottom when a new message is posted. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Functionality 
+* React JS
+* PlaySound 
+* HTML
+* CSS
